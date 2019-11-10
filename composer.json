@@ -1,0 +1,31 @@
+{
+    "name": "reddireccion/laravel-dry-crud",
+    "description": "You can have the basic CRUD functionality for all your models just by defining your Routes ",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oscar Mendoza",
+            "email": "osmarmon32@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+	//To autoload provider in project
+    "extra": {
+        "laravel": {
+            "providers": [
+                "reddireccion\\drycrud\\DryCrudServiceProvider"
+            ]
+        }
+        /*"aliases": {
+            "Debugbar": "Barryvdh\\Debugbar\\Facade"
+        }*/
+    },
+    "autoload": {
+        "psr-4": {
+            "Reddireccion\\DryCrud\\": "src/"
+        }
+    }
+	
+}
